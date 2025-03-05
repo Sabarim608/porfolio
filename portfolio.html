@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabarinathan M's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background: #1e1e1e;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .project, .experience, .education, .skills {
+            background: #222;
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+            text-align: left;
+            border-radius: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ffcc00;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+        }
+        button {
+            background: #ffcc00;
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #e6b800;
+        }
+        a {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sabarinathan M's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a dedicated Full Stack Developer who enjoys crafting intuitive and efficient web applications. With expertise in Python, Django, JavaScript, MySQL, HTML, CSS, and Bootstrap, I specialize in turning ideas into reality through code. Always eager to learn new technologies and solve complex problems, I thrive in collaborative environments that foster innovation.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Hotel Management System</h3>
+            <p>Developed a comprehensive Hotel Management System using Python, enabling hotels to efficiently manage room bookings, guest information, and billing.</p>
+        </div>
+    </section>
+    
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Full Stack Developer - Trainee</h3>
+            <p>Soft Logic System, Chennai (Jul 2024 - Dec 2024)</p>
+        </div>
+        <div class="experience">
+            <h3>Team Lead</h3>
+            <p>Burger King, Chennai (Apr 2021 - Feb 2022)</p>
+            <p>Supervised a team of up to 10 crew members to ensure seamless restaurant operations.</p>
+        </div>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education">
+            <h3>Bachelor of Commerce (B.Com) - General</h3>
+            <p>Agurchand Manmull Jain College (2021 - 2024)</p>
+            <p>CGPA: 6.9</p>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <p><strong>Front-end:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+            <p><strong>Back-end:</strong> Python, Django</p>
+            <p><strong>Database:</strong> MySQL</p>
+        </div>
+        <h2>Soft Skills</h2>
+        <div class="skills">
+            <p>Problem-Solving, Teamwork, Adaptability, Leadership, Risk-Management</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:sabarim0705@gmail.com">sabarim0705@gmail.com</a></p>
+        <p>Phone: <a href="tel:8939565539">8939565539</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/sabarim75" target="_blank">linkedin.com/in/sabarim75</a></p>
+        <p>GitHub: <a href="https://github.com/Sabarim608" target="_blank">github.com/Sabarim608</a></p>
+    </section>
+    
+    <script>
+        document.getElementById("contact-form")?.addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for reaching out! I will get back to you soon.");
+            this.reset();
+        });
+    </script>
+</body>
+</html>
